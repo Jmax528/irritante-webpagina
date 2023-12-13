@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/res.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta name="robots" content="all">
     <meta name="language" content="en">
@@ -12,17 +13,24 @@
     <meta name="copyright" content="site">
 </head>
 <body>
-<div class="grid-container">
-    <div class="grid-item item2"> <img src="IMG/iphone.png" alt="" class="phone"></div>
-    <div class="grid-item item3"><img src="IMG/logo.svg" class="logo" alt="">
-    <h2 class="het">daily tappable tech news <br>and stories</br></h2>
-    <p>lorem ipsum dolor sit amet consectetur adipisicing elit.
+<div id="grid" class="grid-container">
+    <div id="item2" class="grid-item item2"> <img id="phone" src="IMG/iphone.png" alt="" class="phone">
+        <iframe id="maxor" class="maxor hidden" width="355" height="200" src="https://www.youtube.com/embed/X1rFKAtGANo?si=fTp5Ga36A7L5R5EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div id="item3" class="grid-item item3"><img src="IMG/logo.svg" class="logo" alt="">
+        <button id="button" class="button">Start animation (epileptic warning!)</button>
+        <h2 id="h2" class="het">daily tappable tech news <br>and stories</br></h2>
+    <p id="text">lorem ipsum dolor sit amet consectetur adipisicing elit.
      Enim sunt vero et cum delectus molestiae esse veri
     tatis at exercitationem autem dolorum, modi sit pariatur libero maiores hic architecto eum explicabo?</p>
     <img src= "IMG/download-ios.svg" alt="">
     <img src= "IMG/download-android.svg" alt="">
-    <p class="lor">Lorem ipsum doloi voo quibusdam veniam maximeolorem</p>
+    <p id="text2" class="lor">Lorem ipsum doloi voo quibusdam veniam maximeolorem</p>
   </div>
     </div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="js/annoy.js"></script>
+<script src="js/player.js"></script>
 </body>
 </html>
+

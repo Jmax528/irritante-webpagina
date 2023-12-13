@@ -10,6 +10,8 @@ html, body{
   display: grid;
   grid-template-columns: 40vw 60vw;
   background-color: white;
+  /*animation: bgc 3.5s infinite;*/
+
 }
 
 .grid-item {
@@ -18,38 +20,47 @@ html, body{
   font-size: 30px;
 }
 
+.button {
+  grid-column: 1/1;
+  height: 80px;
+  width: 80px;
+}
+
 .item3 {
   grid-column: 1 / 1;
   text-align: left;
   margin-left: 15%;
-  margin-top: -135%;
-}
+  margin-top: -175%;
+  /*animation: bgc 5s infinite;*/
 
+}
 
 .item2{
   background-color: rgb(214, 24, 71);
   grid-column: 2 /  2;
   width: 68%;
-  height: 105%;
   margin-left: 25%;
   /*grid-row: 1 / span 3;*/
+  /*animation: bgc 8s infinite;*/
 }
 
 .phone {
   width: 50%;
    margin-top: 20%;
   margin-bottom: 20%;
+
 }
 
 
 p{
-
   font-family:'Roboto', sans-serif;
   font-size: 60%;
+  /*animation: rotate 1s infinite;*/
 }
 
 h2{
   font-family:'Roboto', sans-serif;
+  /*animation: rotateTwo 1.5s infinite;*/
 }
 
 .lor{
@@ -62,3 +73,76 @@ width: 7%;
 }
 
 
+
+.maxor {
+  position: relative;
+  top: -460px;
+  opacity: 0;
+  pointer-events: none;
+  transition: pointer-events 0.1s ease;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 3.8s ease;
+  pointer-events: auto;
+}
+
+/*--------------------------------*/
+@keyframes bgc {
+  0% {background-color: red}
+  20% {background-color: blue}
+  40% {background-color: blueviolet}
+  60% {background-color: lawngreen}
+  80% {background-color: yellow}
+  100% {background-color: orangered}
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+   } to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateTwo {
+  from {
+    transform: rotate(0deg);
+  } to {
+      transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotatePhone {
+  from {
+  transform: rotate(0deg);
+  } to {
+        transform: rotate(90deg);
+
+      }
+
+}
+
+
+.animate {
+  animation: bgc 2.5s infinite;
+}
+.animateTwo {
+  animation: bgc 3.5s infinite;
+}
+.animateThree {
+  animation: bgc 4.5s infinite;
+}
+.rotate {
+  animation: rotate 1.5s infinite;
+}
+.rotateTwo {
+  animation: rotateTwo 1s infinite;
+}
+
+.rotatePhone {
+  transform: rotate(-90deg);
+  transition: 1s;
+}
