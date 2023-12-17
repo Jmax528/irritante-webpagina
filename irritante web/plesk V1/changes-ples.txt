@@ -1,0 +1,2 @@
+Small changes i made to the html and css files trying to fix a few small things on plesk itself
+This folder only includes the HTML and CSS files since i made no changes to javascript files nor the images

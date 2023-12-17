@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let text2 = document.getElementById('text2');
     let h2 = document.getElementById('h2');
     let phone = document.getElementById('phone');
-    let maxor = document.getElementById('maxor');
+    let vid = document.getElementById('vid');
 
 //toggles the css class to the html element when the button is clicked, starting and stopping the animations
     button.addEventListener('click', function () {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         text.classList.toggle('rotateTwo');
         text2.classList.toggle('rotateTwo');
         button.classList.toggle('animateThree');
-        maxor.classList.toggle('show', phone.classList.contains('rotatePhone'));
+        vid.classList.toggle('show', phone.classList.contains('rotatePhone'));
     });
 });
 

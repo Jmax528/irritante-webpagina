@@ -17,13 +17,6 @@
         grid-row: 3;
     }
 
-    .vid {
-        width: 46vw;
-        height: 50vh;
-        margin-top: 3.4vh;
-        /*transform: translate(-0vw, 120%);*/
-    }
-
     p{
         font-family:'Roboto', sans-serif;
         font-size: 50%;
@@ -61,13 +54,5 @@
         grid-column: 1;
         grid-row: 3;
         margin-top: 15%;
-    }
-
-    .vid {
-        width: 46vw;
-        height: 31.5vh;
-        margin-top: 40.7vh;
-        /*transform: translate(-0vw, -0vh);*/
-
     }
 }
